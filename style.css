@@ -1,0 +1,31 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.tasklist li {
+  display: flex;
+  gap: 20px;
+  padding: 0.5rem 0;
+}
+
+.tasklist li input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.tasklist li input[type="checkbox"]:checked {
+  margin-right: 1rem;
+}
+
+.tasklist li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+p {
+  font-size: smaller;
+}
+
+.tasklist {
+  display: flex;
+  flex-direction: column;
+}
